@@ -12,14 +12,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
+
     <header>
         <div class="conteiner-fluid">
             <div class="conteiner">
                 <a class="logo"href="index.html"><img src="/assets/depositphotos_64000085-stock-illustration-motorcycle-sketch.png" width="100px" height="60px"></a>
                 <div class="navbar">            
-                    <a href="#">Prisijungti</a>
-                    <a href="#">Registruotis</a>
-                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    <button id="myBtn1"><a>Prisijungti</a></button>
+                    <button id="myBtn2"><a>Registruotis</a></button>
+                    <button><a href="#"><i class="fa fa-shopping-cart"></i></a></button>
                 </div>
             </div>
                 <div class="conteiner2">
@@ -88,16 +89,20 @@
             </div>
         </div>
     </header>
-    <div class="conteiner-fluid">
-        <div class="conteiner4">
-            <div class="owl-carousel owl-theme">
-                <div class="item"><div><img src="/assets/motoroleriai-vilniaus-mieste-5ed14c2ed11ae.jpg" width="150px" height="700px"></div></div>
-                <div class="item"><div><img src="/assets/677704-509931-1287x836.jpg" width="150px" height="700px"></div></div>
-                <div class="item"><div><img src="/assets/VTT-ATV-4roues-Yamaha-1024x819.jpg" width="150px" height="700px"></div></div>
-                <div class="item"><div><img src="/assets/shutterstock_1427567252-min.webp"width="150px" height="700px"></div></div>
+
+    <section>
+        <div class="conteiner-fluid">
+            <div class="conteiner4">
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><div><img src="/assets/motoroleriai-vilniaus-mieste-5ed14c2ed11ae.jpg" width="150px" height="700px"></div></div>
+                    <div class="item"><div><img src="/assets/677704-509931-1287x836.jpg" width="150px" height="700px"></div></div>
+                    <div class="item"><div><img src="/assets/VTT-ATV-4roues-Yamaha-1024x819.jpg" width="150px" height="700px"></div></div>
+                    <div class="item"><div><img src="/assets/shutterstock_1427567252-min.webp"width="150px" height="700px"></div></div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
     <footer>
       <div class="conteiner-fluid">
             <div class="conteiner3">
@@ -133,9 +138,55 @@
             </div>            
         </div>
     </footer>
+
+    <div id="prisijungti" class="modal1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h1>Prisijungti</h1> <br>
+            </div>
+            <div class="modal-body">
+                <form>                
+                    <label for="name" class="username">Vartotojo vardas</label><br>
+                    <input type="text" id="name"><br>
+                    <label for="slap" class="password">Slaptažodis</label><br>
+                    <input type="text" id="slap"><br>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <br> <button class="prisijungimas">Prisijungti</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="registruotis" class="modal2">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h1>Registracija</h1><br>
+            </div>
+            <div class="modal-body">
+                <form>                
+                    <label for="user" class="username">Vartotojo vardas</label><br>
+                    <input type="text" id="user"><br>
+                    <label for="slap" class="password">Slaptažodis</label><br>
+                    <input type="text"  id="slap"><br>
+                    <label for="email" class="email">Elektroninis paštas</label><br>
+                    <input type="email" id="email"><br>
+                    <label for="name" class="name">Vardas</label><br>
+                    <input type="text" id="name"><br>
+                    <label for="lname" class="lastname">Pavardė</label><br>
+                    <input type="text" id="lname"><br>
+                </form>
+            </div>
+            <div class="modal-footer">
+               <br> <button class="registracija">Registruotis</button>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="/js/custom.js"></script>
-    
+    <script src="/js/custom.js"></script>    
 </body>
 </html>
