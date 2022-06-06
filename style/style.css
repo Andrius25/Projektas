@@ -32,8 +32,7 @@
     justify-content: flex-end;
     margin-top: 25px;
     margin-bottom: 25px;
-    width: 50%; 
-    
+    width: 50%;     
 }
 .navbar button{
     border-style: none;
@@ -58,7 +57,7 @@
     position: fixed;
     background-color: rgb(240, 221, 221);
     padding-top: 110px;  
-}
+ }
 .conteiner2 ul{
     display: block;
     float: center;
@@ -204,13 +203,11 @@
   text-decoration: none;
   cursor: pointer;
 }
-
+.show, .icon, .conteiner2 input{
+display: none;
+}
 @media screen  {  
-    .navbar{
-        flex-wrap: wrap;
-    }
-
-    .conteiner2{
+    .navbar {
         flex-wrap: wrap;
     }
     .conteiner3{
