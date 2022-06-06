@@ -5,16 +5,9 @@
     background-color: rgb(240, 221, 221); 
 }
 
-.conteiner-fluid{
-    display: flex;
-    justify-content: center;   
-   
-}
 .conteiner{
     display: flex;
     justify-content: space-between;
-    width: 80%; 
-    position: fixed;
     background-color: rgb(240, 221, 221);  
     z-index: 1;  
     border-style: solid;
@@ -26,13 +19,15 @@
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 10px;
+    padding-left: 50px; 
 }
 .navbar{
     display: flex;
     justify-content: flex-end;
     margin-top: 25px;
     margin-bottom: 25px;
-    width: 50%;     
+    width: 50%;    
+    padding-right: 50px; 
 }
 .navbar button{
     border-style: none;
@@ -48,16 +43,13 @@
 }  
 .navbar a:hover {
     color: rgb(255, 255, 255);
-    border-style: solid;
-} 
 
+} 
 .conteiner2{
     display: flex;
-    width: 80%; 
-    position: fixed;
-    background-color: rgb(240, 221, 221);
-    padding-top: 110px;  
- }
+    justify-content: space-between;
+    background-color: rgb(240, 221, 221);   
+}
 .conteiner2 ul{
     display: block;
     float: center;
@@ -69,7 +61,7 @@
 .conteiner2 ul li{
    display: inline-block;
    margin: 0 5px;
-   width: 23%;
+   width: 24%;
 }
 .conteiner2 ul li a{
     color: #0e8d78;
@@ -103,22 +95,21 @@
 .conteiner4{
     display: flex;
     justify-content: center;
-    width: 70%; 
-    height: 706px;
+    width: 80%; 
+    height: 700px;
     position: fixed;
     background-color: rgb(240, 221, 221); 
-    top:250px; 
     z-index: -1;
-    border-style:solid ;
+    padding-left: 25%;
 }
 .conteiner3{
     display: flex;
     justify-content: space-between;
-    width: 80%; 
+    width: 100%; 
     position: fixed;
     background-color: rgb(240, 221, 221);   
     bottom: 18px;
-    border-style: solid;
+    border-style: solid;    
 }
 .flex{
     display: flex;
@@ -168,7 +159,7 @@
 .metai{
     display: flex;
     justify-content: center;
-    width: 80%; 
+    width: 100%; 
     position: fixed;
     background-color: rgb(240, 221, 221);   
     bottom: 0px;
@@ -203,9 +194,7 @@
   text-decoration: none;
   cursor: pointer;
 }
-.show, .icon, .conteiner2 input{
-display: none;
-}
+
 @media screen  {  
     .navbar {
         flex-wrap: wrap;

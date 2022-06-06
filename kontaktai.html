@@ -12,80 +12,80 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
+
     <header>
         <div class="conteiner-fluid">
             <div class="conteiner">
                 <a class="logo"href="index.html"><img src="/assets/depositphotos_64000085-stock-illustration-motorcycle-sketch.png" width="100px" height="60px"></a>
                 <div class="navbar">            
-                    <a href="#">Prisijungti</a>
-                    <a href="#">Registruotis</a>
-                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    <button id="myBtn1"><a>Prisijungti</a></button>
+                    <button id="myBtn2"><a>Registruotis</a></button>
+                    <button><a href="#"><i class="fa fa-shopping-cart"></i></a></button>
                 </div>
             </div>
                 <div class="conteiner2">
                     <ul> 
                         <li>
-                            <a href="#">Motoroleriai ▼</a>
+                            <a href="motoroleriai.html">Motoroleriai ▼</a>
                             <ul>
                                 <li>
-                                    <a href="#">Honda</a>
+                                    <a href="motoroleriai-honda.html">Honda</a>
                                 </li>
                                 <li>
-                                    <a href="#">Yamaha</a>
+                                    <a href="motoroleriai-yamaha.html">Yamaha</a>
                                 </li>
                                 <li>
-                                    <a href="#">Suzuki</a>
+                                    <a href="motoroleriai-suzuki.html">Suzuki</a>
                                 </li>
                             </ul>
                         </li>             
                         <li>
-                            <a href="#">Motociklai ▼</a>
+                            <a href="motociklai.html">Motociklai ▼</a>
                             <ul>
                                 <li>
-                                    <a href="#">Honda</a>
+                                    <a href="motociklai-honda.html">Honda</a>
                                 </li>
                                 <li>
-                                    <a href="#">Yamaha</a>
+                                    <a href="motociklai-yamaha.html">Yamaha</a>
                                 </li>
                                 <li>
-                                    <a href="#">Suzuki</a>
+                                    <a href="motociklai-suzuki.html">Suzuki</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Keturačiai ▼</a>
+                            <a href="keturaciai.html">Keturačiai ▼</a>
                             <ul>
                                 <li>
-                                    <a href="#">Darbo</a>
+                                    <a href="keturaciai-darbo.html">Darbo</a>
                                 </li>
                                 <li>
-                                    <a href="#">Sportiniai</a>
+                                    <a href="keturaciai-sportiniai.html">Sportiniai</a>
                                 </li>
                                 <li>
-                                    <a href="#">Vaikiški</a>
+                                    <a href="keturaciai-vaikiski.html">Vaikiški</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Aksesuarai ▼</a>
+                            <a href="aksesuarai.html">Aksesuarai ▼</a>
                             <ul>
                                 <li>
-                                    <a href="#">Šalmas</a>
+                                    <a href="salmas.html">Šalmas</a>
                                 </li>
                                 <li>
-                                    <a href="#">Pirštinės</a>
+                                    <a href="pirstines.html">Pirštinės</a>
                                 </li>
                                 <li>
-                                    <a href="#">Batai</a>
+                                    <a href="batai.html">Batai</a>
                                 </li>
                                 <li>
-                                    <a href="#">Šarvai</a>
+                                    <a href="sarvai.html">Šarvai</a>
                                 </li>
                             </ul>
                         </li>
                     </ul>                       
                  </div>
-            </div>
         </div>
     </header>
 
@@ -97,16 +97,16 @@
                           <h2>Informacija:</h2>
                               <ul>
                                   <li>
-                                      <a href="#">Kontaktai</a>
+                                      <a href="kontaktai.html">Kontaktai</a>
                                   </li>
                                   <li>
-                                      <a href="#">Prekių pristatymas</a>
+                                      <a href="prekiu_pri.html">Prekių pristatymas</a>
                                   </li>
                                   <li>
-                                      <a href="#">DUK</a>
+                                      <a href="DUK.html">DUK</a>
                                   </li>
                                   <li>
-                                      <a href="#">Taisyklės</a>
+                                      <a href="taisykles.html">Taisyklės</a>
                                   </li>
                               </ul>
                       </div>
@@ -124,8 +124,55 @@
               </div>            
           </div>
       </footer>
+      
+      <div id="prisijungti" class="modal1">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <span class="close">&times;</span>
+                  <h1>Prisijungti</h1> <br>
+              </div>
+              <div class="modal-body">
+                  <form>                
+                      <label for="name" class="username">Vartotojo vardas</label><br>
+                      <input type="text" id="name"><br>
+                      <label for="slap" class="password">Slaptažodis</label><br>
+                      <input type="text" id="slap"><br>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <br> <button class="prisijungimas">Prisijungti</button>
+              </div>
+          </div>
+      </div>
+  
+      <div id="registruotis" class="modal2">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <span class="close">&times;</span>
+                  <h1>Registracija</h1><br>
+              </div>
+              <div class="modal-body">
+                  <form>                
+                      <label for="user" class="username">Vartotojo vardas</label><br>
+                      <input type="text" id="user"><br>
+                      <label for="slap" class="password">Slaptažodis</label><br>
+                      <input type="text"  id="slap"><br>
+                      <label for="email" class="email">Elektroninis paštas</label><br>
+                      <input type="email" id="email"><br>
+                      <label for="name" class="name">Vardas</label><br>
+                      <input type="text" id="name"><br>
+                      <label for="lname" class="lastname">Pavardė</label><br>
+                      <input type="text" id="lname"><br>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                 <br> <button class="registracija">Registruotis</button>
+              </div>
+          </div>
+      </div>
+  
       <script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-      <script src="/js/custom.js"></script>        
-</body>
-</html>
+      <script src="/js/custom.js"></script>    
+  </body>
+  </html>
