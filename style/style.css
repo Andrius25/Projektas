@@ -1,15 +1,13 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    background-color: rgb(240, 221, 221); 
+    padding: 0;  
 }
 
 .conteiner{
     display: flex;
     justify-content: space-between;
     background-color: rgb(240, 221, 221);  
-    z-index: 1;  
     border-style: solid;
 }
 .logo{
@@ -28,9 +26,11 @@
     margin-bottom: 25px;
     width: 50%;    
     padding-right: 50px; 
+    background-color: rgb(240, 221, 221); 
 }
 .navbar button{
     border-style: none;
+    background-color: rgb(240, 221, 221); 
 }
 .navbar a {
     float: left;
@@ -43,12 +43,12 @@
 }  
 .navbar a:hover {
     color: rgb(255, 255, 255);
-
 } 
 .conteiner2{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(240, 221, 221);   
+    background-color: rgb(240, 221, 221);  
+    border-style: solid; 
 }
 .conteiner2 ul{
     display: block;
@@ -56,7 +56,8 @@
     list-style: none;
     width: 100%;
     text-align: center;
-    border-style: solid;   
+    padding-top: 10px;  
+    padding-bottom: 10px;
 }
 .conteiner2 ul li{
    display: inline-block;
@@ -78,6 +79,9 @@
     opacity: 0;
     visibility: hidden;
     width: 25%;  
+    background-color: rgb(240, 221, 221); 
+    border-style: solid;
+    z-index: 1;
 }
 .conteiner2 ul li:hover > ul{
     opacity: 1;
@@ -95,12 +99,12 @@
 .conteiner4{
     display: flex;
     justify-content: center;
-    width: 80%; 
+    width: 100%; 
     height: 700px;
     position: fixed;
-    background-color: rgb(240, 221, 221); 
     z-index: -1;
     padding-left: 25%;
+    padding-right: 25%;
 }
 .conteiner3{
     display: flex;
@@ -173,14 +177,14 @@
   left: 0;
   top: 0;
   width: 100%; 
-  height: 100%;  
-  background-color: rgb(0,0,0); 
+  height: 100%;   
   background-color: rgba(0,0,0,0.4); 
 }
 .modal-content {
     margin: auto;
     padding: 50px;   
-    width: 50%;
+    width: 300px;
+    background-color: rgb(240, 221, 221);  
 }
 .close {
     color: #aaaaaa;
@@ -194,9 +198,176 @@
   text-decoration: none;
   cursor: pointer;
 }
+ /* neveikia burger menu
+ .conteiner2 .open-nav-menu{
+    height: 34px;
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;     
+    display: none;  
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.conteiner2 .open-nav-menu span{
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #0e8d78;
+    position: relative;
+}
+.conteiner2 .open-nav-menu span:before,
+.conteiner2 .open-nav-menu span:after{
+    content: '';
+    position: absolute;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e8d78;
+    box-sizing: border-box;
+}
+.conteiner2 .open-nav-menu span:before{
+    top: -7px;
+}
+.conteiner2 .open-nav-menu span:after{
+    top: 7px;
+}
+.conteiner2 .close-nav-menu{
+    height: 34px;
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;     
+    display: none;  
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.conteiner2 .close-nav-menu span{
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #0e8d78;
+    position: relative;
+}
+.conteiner2 .close-nav-menu span:before,
+.conteiner2 .close-nav-menu span:after{
+    content: '';
+    position: absolute;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e8d78;
+    box-sizing: border-box;
+}
+.conteiner2 .close-nav-menu span:before{
+    top: -7px;
+}
+.conteiner2 .close-nav-menu span:after{
+    top: 7px;
+}*/
+.section{
+    width: 100%;
+    min-height: 110vh;
+    background-color: #9ebdd4;
+}
+.about{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section{
+    float: left;
+    width: 55%;
+}
+.img-section{
+    float: right;
+    width: 40%;
+}
+.img-section img{
+    width: 100%;
+    height: auto;
+}
+.content-section .title{
+    text-transform: uppercase;
+}
+.content-section .content h2{
+    margin-top: 20px;
+    color: #0e8d78;
+}
+.content-section .content p{
+    margin-top: 10px;
+    line-height: 1.2;
+}
+.accordion{
+    padding-top: 150px;
+    width: 100%;
+}
+.accordion .contentBx{
+    position: relative;
+    margin: 10px 20px;
+}
+.accordion .contentBx .label{
+    position: relative;
+    padding: 10px;
+    background: #31414d;
+    color: #0e8d78;
+    cursor: pointer;
+}
+.accordion .contentBx .label::before{
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.accordion .contentBx.active .label::before{
+    content: "-";
+}
+.accordion .contentBx .accordion_content{
+    position: relative;
+    background: white;
+    height: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.accordion .contentBx.active .accordion_content{
+    height: 150px;
+    padding: 10px;
+}
+.moto{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
-@media screen  {  
-    .navbar {
+}
+.remas{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    gap: 30px;
+}
+.card-header{
+   border-color: grey;
+}
+.card-header img{
+    width: 100%;
+}
+.card-body{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+.card-body a{
+    text-decoration: none;
+    color: #0e8d78;
+}
+
+@media (max-width:1305px) {  
+    .navbar{
         flex-wrap: wrap;
     }
     .conteiner3{
@@ -205,4 +376,61 @@
     .flex{
         flex-wrap: wrap;
     } 
+    .about{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section{
+        float: left;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .img-section{
+        float: left;
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+    }
+    .remas{
+        flex-wrap: wrap;
+    }
 }
+/* neveikia burger menu
+@media(max-width:500px){
+    .conteiner2 ul {
+        position: fixed;
+        top:160px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        padding: 15px 0; 
+        z-index: 1;      
+    }
+    .conteiner2 ul li{
+        display: block;
+        width: 50%;   
+        padding-top: 5px;    
+    }   
+    .conteiner2 ul ul{
+        display: block;
+        background-color: #000;
+        width: 100%; 
+        position: relative; 
+        margin-left: 170px;
+        top:-19px 
+    }
+    .conteiner2 ul ul li {
+        width: 100%;   
+        
+    }
+    .conteiner2 .open-nav-menu{
+        display: flex;
+    }
+    .conteiner2 .close-nav-menu{
+        display: flex;
+    }
+}*/
